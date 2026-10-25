@@ -24,6 +24,15 @@ Do not run these commands in the Playwright, GHAS, or admin-demo checkout.
 
 ## Prepared Branches
 
+- [Training issue #1](https://github.com/ksambademo/github-repos-demo/issues/1)
+- [Passing feature PR #2](https://github.com/ksambademo/github-repos-demo/pull/2)
+- [Failing-check PR #3](https://github.com/ksambademo/github-repos-demo/pull/3)
+- [Reference-revert PR #4](https://github.com/ksambademo/github-repos-demo/pull/4)
+- [Actions runs](https://github.com/ksambademo/github-repos-demo/actions)
+- [Rulesets](https://github.com/ksambademo/github-repos-demo/settings/rules)
+- [Tags](https://github.com/ksambademo/github-repos-demo/tags)
+- [Draft release list](https://github.com/ksambademo/github-repos-demo/releases)
+
 | Branch | Purpose | Expected validation |
 |---|---|---|
 | `main` | Original welcome text and CI | Pass |
@@ -50,7 +59,7 @@ to make the demonstration appear complete.
 
 1. Inspect this repository's owner, private visibility, description, and settings.
    Use the creation form as a walkthrough without creating a duplicate.
-2. Show [the feature PR](https://github.com/ksambademo/github-repos-demo/pulls),
+2. Show [the feature PR](https://github.com/ksambademo/github-repos-demo/pull/2),
    its commits, linked issue, and passing check.
 3. Show the labeled failing-check PR and its failed validation. Do not weaken the check.
 4. Show how required review blocks the valid PR even though CI is green.
