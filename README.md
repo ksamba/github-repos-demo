@@ -1,8 +1,12 @@
 # GitHub Repositories Training
 
-Private training repository for the 90-minute GitHub Repos session in
-[ksambademo](https://github.com/ksambademo). No production data, credentials,
+Public training repository for the 90-minute GitHub Repos session on the personal
+[ksamba account](https://github.com/ksamba). No production data, credentials,
 application deployment, or third-party dependencies.
+
+The owner approved transfer from the expiring enterprise trial and public
+visibility so private-repository plan restrictions do not prevent branch-policy
+demonstrations on GitHub Free. The Repos demo no longer depends on the trial.
 
 ## Start Here
 
@@ -19,19 +23,19 @@ npm.cmd run validate
 ```
 
 Expect four passing validator tests and `Welcome to the team handbook.`.
-`origin` must point to `https://github.com/ksambademo/github-repos-demo.git`.
+`origin` must point to `https://github.com/ksamba/github-repos-demo.git`.
 Do not run these commands in the Playwright, GHAS, or admin-demo checkout.
 
 ## Prepared Branches
 
-- [Training issue #1](https://github.com/ksambademo/github-repos-demo/issues/1)
-- [Passing feature PR #2](https://github.com/ksambademo/github-repos-demo/pull/2)
-- [Failing-check PR #3](https://github.com/ksambademo/github-repos-demo/pull/3)
-- [Reference-revert PR #4](https://github.com/ksambademo/github-repos-demo/pull/4)
-- [Actions runs](https://github.com/ksambademo/github-repos-demo/actions)
-- [Rulesets](https://github.com/ksambademo/github-repos-demo/settings/rules)
-- [Tags](https://github.com/ksambademo/github-repos-demo/tags)
-- [Draft release list](https://github.com/ksambademo/github-repos-demo/releases)
+- [Training issue #1](https://github.com/ksamba/github-repos-demo/issues/1)
+- [Passing feature PR #2](https://github.com/ksamba/github-repos-demo/pull/2)
+- [Failing-check PR #3](https://github.com/ksamba/github-repos-demo/pull/3)
+- [Reference-revert PR #4](https://github.com/ksamba/github-repos-demo/pull/4)
+- [Actions runs](https://github.com/ksamba/github-repos-demo/actions)
+- [Rulesets](https://github.com/ksamba/github-repos-demo/settings/rules)
+- [Tags](https://github.com/ksamba/github-repos-demo/tags)
+- [Draft release list](https://github.com/ksamba/github-repos-demo/releases)
 
 | Branch | Purpose | Expected validation |
 |---|---|---|
@@ -50,16 +54,18 @@ successful CI run. It requires a PR, one independent approval, dismissal of stal
 approvals, and the `validate-handbook` GitHub Actions check. Force pushes and
 branch deletion are blocked. No bypass actors are configured.
 
-Only `ksamba` was visible in organization membership during setup. A separate
-consenting reviewer with Write access must be arranged before a live merge.
+Only `ksamba` is currently listed as a repository collaborator. Public readers
+do not automatically gain push access. A separate consenting collaborator with
+Write access must be arranged before a live merge. Personal repositories do not
+have organization teams or organization base permissions.
 Do not invite users without approval, disable the review rule, or self-approve
 to make the demonstration appear complete.
 
 ## Safe Demonstration Flow
 
-1. Inspect this repository's owner, private visibility, description, and settings.
+1. Inspect this repository's personal owner, public visibility, description, and settings.
    Use the creation form as a walkthrough without creating a duplicate.
-2. Show [the feature PR](https://github.com/ksambademo/github-repos-demo/pull/2),
+2. Show [the feature PR](https://github.com/ksamba/github-repos-demo/pull/2),
    its commits, linked issue, and passing check.
 3. Show the labeled failing-check PR and its failed validation. Do not weaken the check.
 4. Show how required review blocks the valid PR even though CI is green.
@@ -124,5 +130,8 @@ GitHub-generated source archives are not tested binary build artifacts.
 - Preserve the prepared branches, issue, PRs, draft, and tag.
 - Create fresh practice branches from `main` instead of resetting example history.
 - Return to `main` with a clean working tree after rehearsal.
-- Keep private visibility and repository-scoped rules; do not change organization policy.
+- Keep the approved public visibility and repository-scoped rules. Switching to
+  private on GitHub Free would remove supported enforcement for this demo.
+- Do not publish any sensitive content: the source, history, issues, PRs, and
+  Actions output are publicly accessible. Keep the draft release unpublished.
 - Do not commit logs, recordings, reports, secrets, or customer data.
