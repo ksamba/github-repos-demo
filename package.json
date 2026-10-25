@@ -1,0 +1,14 @@
+{
+  "name": "github-repos-training",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Private GitHub repository collaboration training. No dependencies or deployment.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-handbook.js",
+    "test": "node --test"
+  }
+}

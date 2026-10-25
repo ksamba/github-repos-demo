@@ -1,0 +1,24 @@
+name: Validate handbook
+
+on:
+  push:
+    branches: [main, 'feature/**', 'demo/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: validate-handbook
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Test validator behavior
+        run: npm test
+      - name: Validate actual handbook
+        run: npm run validate
