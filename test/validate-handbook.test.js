@@ -18,6 +18,7 @@ function fixture(t) {
   };
 }
 
+//throwing in a comment
 test('accepts a nonempty welcome message and reports the exact text', (t) => {
   const sample = fixture(t);
   sample.write('Welcome to the team handbook.\n');
